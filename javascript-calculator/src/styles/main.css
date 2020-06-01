@@ -1,0 +1,272 @@
+body {
+  background-color: #dae1e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body .made-by {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+body .made-by a {
+  color: #27496d;
+  text-decoration: none;
+}
+
+body .made-by a:hover {
+  color: #ffa41b;
+}
+
+body .made-by a:active {
+  color: #346293;
+}
+
+body .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 400px;
+  color: #dae1e7;
+  padding: 1rem;
+  background-color: #27496d;
+}
+
+body .App .title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+body .App .display {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #142850;
+}
+
+body .App .button-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+      grid-template-areas: "clear clear divide multiply" "seven eight nine subtract" "four five six add" "one two three equals" "zero zero decimal equals";
+}
+
+body .App .button-container .btn {
+  border: 1px solid #27496d;
+  color: #142850;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #dae1e7;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 4rem;
+}
+
+body .App .button-container .btn:hover {
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+  background-color: #bbc8d3;
+}
+
+body .App .button-container .btn:active {
+  color: #dae1e7;
+  background-color: #4c6376;
+  border: none;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .App .button-container .btn:focus {
+  outline: none;
+}
+
+body .App .button-container .danger {
+  color: white;
+  background-color: tomato;
+}
+
+body .App .button-container .danger:hover {
+  background-color: #ff3814;
+}
+
+body .App .button-container .danger:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: tomato;
+  background-color: #470b00;
+  border: none;
+}
+
+body .App .button-container .danger:focus {
+  outline: none;
+}
+
+body .App .button-container .operator {
+  background-color: #bbc8d3;
+}
+
+body .App .button-container .operator:hover {
+  background-color: #9cafbf;
+}
+
+body .App .button-container .operator:active {
+  background-color: #4c6376;
+  border: none;
+}
+
+body .App .button-container #clear {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: clear;
+}
+
+body .App .button-container #divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: divide;
+}
+
+body .App .button-container #multiply {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+body .App .button-container #subtract {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: subtract;
+}
+
+body .App .button-container #add {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: add;
+}
+
+body .App .button-container #seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+body .App .button-container #eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+body .App .button-container #nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+body .App .button-container #four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+body .App .button-container #five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+body .App .button-container #six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+body .App .button-container #one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+body .App .button-container #two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+body .App .button-container #three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+body .App .button-container #zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+body .App .button-container #decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: decimal;
+}
+
+body .App .button-container #equals {
+  background-color: #ffa41b;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equals;
+  height: 100%;
+}
+
+body .App .button-container #equals:hover {
+  background-color: #e78b00;
+}
+
+body .App .button-container #equals:active {
+  background-color: #ffb84e;
+}
+/*# sourceMappingURL=main.css.map */

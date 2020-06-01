@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,400;1,500&display=swap");
+body {
+  background-color: #222831;
+  color: #00adb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .App .made-by {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+body .App .made-by a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+body .App .made-by a:hover {
+  color: #eeeeee;
+}
+
+body .App .made-by a:active {
+  color: #00dee8;
+}
+
+body .App h2 {
+  margin-top: 2rem;
+}
+
+body .App h2 svg {
+  -webkit-animation: rotation 1s ease infinite;
+          animation: rotation 1s ease infinite;
+}
+
+@-webkit-keyframes rotation {
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+body .App .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 60vh;
+}
+
+@media (max-width: 600px) {
+  body .App .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+body .App .container .previewer-container h6 {
+  font-size: medium;
+  text-align: center;
+}
+
+body .App .container .previewer-container #preview {
+  color: #393e46;
+  background-color: #eeeeee;
+  overflow-y: scroll;
+  padding: 2rem;
+  max-height: 100%;
+}
+
+@media (max-width: 600px) {
+  body .App .container .previewer-container #preview {
+    width: 100vw;
+  }
+}
+
+body .App .container .editor-container h6 {
+  font-size: medium;
+  text-align: center;
+}
+
+body .App .container .editor-container #editor {
+  background-color: #eeeeee;
+  font-family: "Source Code Pro", monospace;
+  padding: 2rem;
+  height: 100%;
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  body .App .container .editor-container #editor {
+    min-height: 30vh;
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

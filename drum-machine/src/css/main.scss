@@ -1,0 +1,109 @@
+//Color variables
+$color-primary: #374955;
+$color-secondary: #203541;
+$color-alt: #ffa41b;
+$color-light: #ffd933;
+//font-sizes
+$txt-xl: 3rem;
+$txt-md: 2rem;
+$txt-sm: 1rem;
+body {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  .made-by {
+    color: $color-light;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    a {
+      color: $color-alt;
+      text-decoration: none;
+      &:hover {
+        color: $color-light;
+      }
+      &:active {
+        color: lighten($color: $color-alt, $amount: 10);
+      }
+    }
+  }
+  .container {
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    background-color: $color-secondary;
+    #display {
+      width: 300px;
+      font-size: $txt-md;
+      color: $color-light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    .drumpad-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1rem;
+      grid-template-areas: "Q W E" "A S D" "Z X C";
+      .drum-pad {
+        box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.35);
+        border-radius: 5%;
+        color: $color-secondary;
+        border: none;
+        background-color: $color-light;
+        outline: none;
+        cursor: pointer;
+        font-size: $txt-xl;
+        padding: 2rem;
+        &:hover {
+          transition: ease-out 0.2s;
+          background-color: lighten($color: $color-light, $amount: 20);
+        }
+        &:active {
+          transform: scale(0.97);
+          transition: ease-out 0.1s;
+          background-color: $color-alt;
+        }
+      }
+      .Q {
+        grid-area: Q;
+      }
+      .W {
+        grid-area: W;
+      }
+      .E {
+        grid-area: E;
+      }
+      .A {
+        grid-area: A;
+      }
+      .S {
+        grid-area: S;
+      }
+      .D {
+        grid-area: D;
+      }
+      .Z {
+        grid-area: Z;
+      }
+      .X {
+        grid-area: X;
+      }
+      .C {
+        grid-area: C;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+body {
+  background-color: #374955;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body .made-by {
+  color: #ffd933;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+body .made-by a {
+  color: #ffa41b;
+  text-decoration: none;
+}
+
+body .made-by a:hover {
+  color: #ffd933;
+}
+
+body .made-by a:active {
+  color: #ffb84e;
+}
+
+body .container {
+  border-radius: 5px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #203541;
+}
+
+body .container #display {
+  width: 300px;
+  font-size: 2rem;
+  color: #ffd933;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+body .container .drumpad-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+      grid-template-areas: "Q W E" "A S D" "Z X C";
+}
+
+body .container .drumpad-container .drum-pad {
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5%;
+  color: #203541;
+  border: none;
+  background-color: #ffd933;
+  outline: none;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+body .container .drumpad-container .drum-pad:hover {
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  background-color: #ffec99;
+}
+
+body .container .drumpad-container .drum-pad:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+  background-color: #ffa41b;
+}
+
+body .container .drumpad-container .Q {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Q;
+}
+
+body .container .drumpad-container .W {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: W;
+}
+
+body .container .drumpad-container .E {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: E;
+}
+
+body .container .drumpad-container .A {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: A;
+}
+
+body .container .drumpad-container .S {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: S;
+}
+
+body .container .drumpad-container .D {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: D;
+}
+
+body .container .drumpad-container .Z {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Z;
+}
+
+body .container .drumpad-container .X {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: X;
+}
+
+body .container .drumpad-container .C {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: C;
+}
+/*# sourceMappingURL=main.css.map */

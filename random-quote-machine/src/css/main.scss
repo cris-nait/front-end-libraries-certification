@@ -1,0 +1,102 @@
+//color variables
+$color-primary: #e9e9e9;
+$color-secondary: #ff502f;
+$color-alt: #303960;
+//fnt sizes
+$txt-xl: 2.5rem;
+$txt-md: 2rem;
+$txt-sm: 1.1rem;
+
+body {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  .made-by {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    a {
+      color: $color-alt;
+      text-decoration: none;
+      &:hover {
+        color: $color-secondary;
+      }
+      &:active {
+        color: lighten($color: $color-secondary, $amount: 10);
+      }
+    }
+  }
+  .App {
+    width: 60vw;
+    color: $color-alt;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: darken($color: rgba(236, 240, 241, 0.829), $amount: 10);
+    #text {
+      font-size: $txt-xl;
+    }
+    #author {
+      margin: 1rem 0;
+      position: relative;
+      justify-self: right;
+      width: 100%;
+      text-align: right;
+    }
+    .btn-container {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-size: $txt-md;
+      #tweet-quote {
+        text-decoration: none;
+        color: $color-alt;
+        font-size: $txt-sm;
+        height: 100%;
+        &:hover {
+          transition: ease-in 0.2s;
+          color: $color-secondary;
+        }
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+      #tumblr-quote {
+        @extend #tweet-quote;
+        margin-left: 1rem;
+      }
+      #new-quote {
+        outline: none;
+        font-size: $txt-sm;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 1rem;
+        background-color: $color-secondary;
+        &:hover {
+          transition: ease-in-out 0.5s;
+          background-color: darken($color: $color-secondary, $amount: 10);
+        }
+        &:active {
+          transition: ease-out 0s;
+          background-color: lighten($color: $color-secondary, $amount: 10);
+        }
+        svg {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
